@@ -23,7 +23,7 @@ ui <- fluidPage(
     tabPanel("Plots", page_plots, value = "page-plots"),
     tabPanel("About", page_about, value = "page-about"),
     tags$script(HTML("var header = $('.navbar > .container-fluid');
-    header.append('<div style=\"float:right\"><a target=\"_blank\" href=\"https://github.com/chschoenenberger/covid19_dashboard\"><img src=\"logo.png\" alt=\"alt\" style=\"float:right;width:33px;padding-top:10px;margin-top:-50px;margin-right:10px\"> </a></div>');
+    header.append('<div style=\"float:right\"><a target=\"_blank\" href=\"https://github.com/mesfind/covid19_et\"><img src=\"logo.png\" alt=\"alt\" style=\"float:right;width:33px;padding-top:10px;margin-top:-50px;margin-right:10px\"> </a></div>');
     console.log(header)")
     )
   )
