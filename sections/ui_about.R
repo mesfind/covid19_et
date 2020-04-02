@@ -25,7 +25,7 @@ body_about <- dashboardBody(
             tags$br(),
             tags$br(),
             "Find more thoughts on this dashboard from Christoph Schoenenberger in this",
-            tags$a(href = "https://medium.com/@ch.schoenenberger/covid-19-open-source-dashboard-fa1d2b4cd985",
+            tags$a(href = "https://medium.com/covid-19-open-source-dashboard-fa1d2b4cd985",
               "Medium article"), ".",
             h3("Data"),
             tags$ul(
@@ -40,18 +40,17 @@ body_about <- dashboardBody(
             on getting a new data source with more reliable data."),
             h3("Bugs, Issues & Enhancement Requests"),
             "If you find any bug / issue or have an idea how to improve the dashboard,
-            please create an issue on ", tags$a(href = "https://github.com/chschoenenberger/covid19_dashboard/issues",
+            please create an issue on ", tags$a(href = "https://github.com/mesfind/covid19_et/issues",
               "Github"), ". I will try to look into it as soon as possible.",
             h3("Contribute"),
             "If you want to add any visualization or further information feel free to create
-            a pull request on ", tags$a(href = "https://github.com/chschoenenberger/covid19_dashboard", "Github"), ".
+            a pull request on ", tags$a(href = "https://github.com/mesfind/covid19_et", "Github"), ".
             For major rework either fork the repository or create an issue so we can discuss it.",
             h3("Developers"),
-            "Christoph Schoenenberger | Data Scientist @",
-            tags$a(href = "https://www.zuehlke.com/ch/en/", "Zuehlke Engineering"), "|",
-            tags$a(href = "https://www.linkedin.com/in/cschonenberger/", "LinkedIn"), "|",
-            tags$a(href = "https://twitter.com/ChSchonenberger", "Twitter"), "|",
-            tags$a(href = "https://github.com/chschoenenberger/", "Github"),
+            "Mesfin Diro | Data Scientist @",
+            tags$a(href = "https://www.linkedin.com/in/mesfindiro/", "LinkedIn"), "|",
+            tags$a(href = "https://twitter.com/mesfin.diro", "Twitter"), "|",
+            tags$a(href = "https://github.com/mesfind/", "Github"),
             width = 12,
             style = "padding-left: 20px; padding-right: 20px; padding-bottom: 40px; margin-top: -15px;"
           ),
