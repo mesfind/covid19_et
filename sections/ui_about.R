@@ -24,10 +24,6 @@ body_about <- dashboardBody(
             information etc.",
             tags$br(),
             tags$br(),
-            "Find more thoughts on this dashboard from Christoph Schoenenberger in this",
-            tags$a(href = "https://medium.com/covid-19-open-source-dashboard-fa1d2b4cd985",
-              "Medium article"), ".",
-            h3("Data"),
             tags$ul(
               tags$li(tags$b("COVID-19 data:"), tags$a(href = "https://github.com/CSSEGISandData/COVID-19",
                 "Johns Hopkins CSSE")),
@@ -46,7 +42,7 @@ body_about <- dashboardBody(
             "If you want to add any visualization or further information feel free to create
             a pull request on ", tags$a(href = "https://github.com/mesfind/covid19_et", "Github"), ".
             For major rework either fork the repository or create an issue so we can discuss it.",
-            h3("Developers"),
+            h3("Developer"),
             "Mesfin Diro | Data Scientist @",
             tags$a(href = "https://www.linkedin.com/in/mesfindiro/", "LinkedIn"), "|",
             tags$a(href = "https://twitter.com/mesfin.diro", "Twitter"), "|",

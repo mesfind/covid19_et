@@ -4,7 +4,7 @@ source("sections/ui_about.R", local = TRUE)
 source("sections/ui_fullTable.R", local = TRUE)
 
 ui <- fluidPage(
-  title = "COVID-19 Global Cases - Open Source Version",
+  title = "COVID-19 Global Cases",
   tags$head(
     tags$link(rel = "shortcut icon", type = "image/png", href = "logo.png")
   ),
