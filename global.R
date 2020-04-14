@@ -12,8 +12,8 @@ source("utils.R", local = T)
 
 downloadGithubData <- function() {
   download.file(
-    url      = "https://github.com/CSSEGISandData/COVID-19/archive/master.zip",
-    destfile = "data/covid19_data.zip"
+    url      = "https://coronadatascraper.com/timeseries.csv",
+    destfile = "data/covid19_timeseries.csv"
   )
   
   data_path <- "COVID-19-master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_"
@@ -129,3 +129,21 @@ top5_countries <- data_evolution %>%
   top_n(5) %>%
   select(`Country/Region`) %>%
   pull()
+
+data_evolution_new <- read_csv("data/covid19_timeseries.csv",
+  col_types = cols(
+    county = col_character(),
+    city   = col_character()
+  )
+)
+
+distincCountries <- data_evolution_new %>% select(country) %>% distinct() %>% arrange(country) %>% pull()
+for (eachCountry in distincCountries) {
+  states <- data_evolution_new %>% filter(country == eachCountry) %>% select(state) %>% distinct() %>% pull()
+  # print(paste(eachCountry, paste(states, collapse = ", ")))
+  # print("***********************************")
+  hasStates <- !all(sapply(states, is.na))
+  if (hasStates) {
+    print(paste("Country ", eachCountry, "has states:", hasStates))
+  }
+}
